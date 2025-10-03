@@ -4,6 +4,11 @@ run-name: 06 - contexts | DEBUG  - ${{ inputs.debug }}
 on:
     push:
     workflow_dispatch:
+        inputs:
+          debug:
+            description: describes the debug message
+            type: boolean
+            default: false
 
 jobs: 
     echo-data:
