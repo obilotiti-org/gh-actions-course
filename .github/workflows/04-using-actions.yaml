@@ -16,6 +16,8 @@ jobs:
                 node-version: '20.x'
             - name: INstall Dependencies
               run: npm ci
+              working-directory: 04-using-actions/react-app
+              
 
         # 1. checkout the code from the repository
         # 2. Install deps of our react application
