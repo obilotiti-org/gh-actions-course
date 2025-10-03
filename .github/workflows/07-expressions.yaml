@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       debug:
+        description: DEBUG ON
         type: boolean
         default: false
 
